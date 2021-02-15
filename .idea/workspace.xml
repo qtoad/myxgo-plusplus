@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini/ini_readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/file_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/decode_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,24 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RunManager">
+    <configuration name="TestEmpty in github.com/qtoad/xgo-plusplus/ini.v1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="xgo-plusplus" />
+      <working_directory value="$PROJECT_DIR$/ini.v1" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/qtoad/xgo-plusplus/ini.v1" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestEmpty$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestEmpty in github.com/qtoad/xgo-plusplus/ini.v1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -46,10 +65,26 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="317" y="23" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613380027364">
+    <state x="317" y="23" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613382428995">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="317" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613380027364" />
+    <state x="317" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613382428995" />
+    <state width="1358" height="200" key="GridCell.Tab.0.bottom" timestamp="1613383120732">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613383120732" />
+    <state width="1358" height="200" key="GridCell.Tab.0.center" timestamp="1613383120731">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613383120731" />
+    <state width="1358" height="200" key="GridCell.Tab.0.left" timestamp="1613383120731">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613383120731" />
+    <state width="1358" height="200" key="GridCell.Tab.0.right" timestamp="1613383120732">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1358" height="200" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613383120732" />
     <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613380071906">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
