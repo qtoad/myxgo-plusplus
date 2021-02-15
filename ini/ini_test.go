@@ -20,8 +20,8 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/qtoad/xgo-plusplus/ini"
 	. "github.com/smartystreets/goconvey/convey"
-	"gopkg.in/ini.v1"
 )
 
 const (

@@ -23,7 +23,7 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	"gopkg.in/ini.v1"
+	"github.com/qtoad/xgo-plusplus/ini"
 )
 
 type testNested struct {
