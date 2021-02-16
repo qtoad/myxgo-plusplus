@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="" />
+    <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,13 +43,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/diff" />
       <recent name="$PROJECT_DIR$/typx" />
       <recent name="$PROJECT_DIR$/fmtx" />
       <recent name="$PROJECT_DIR$/text" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test xgo-plusplus">
+  <component name="RunManager" selected="Go Test.TestBase_Get in github.com/qtoad/xgo-plusplus/html">
+    <configuration name="TestBase_Get in github.com/qtoad/xgo-plusplus/html" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="xgo-plusplus" />
+      <working_directory value="$PROJECT_DIR$/html" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/qtoad/xgo-plusplus/html" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestBase_Get$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestEmpty in github.com/qtoad/xgo-plusplus/ini.v1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="xgo-plusplus" />
       <working_directory value="$PROJECT_DIR$/ini.v1" />
@@ -57,17 +71,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^TestEmpty$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestGoSyntax in github.com/qtoad/xgo-plusplus/fmtx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="xgo-plusplus" />
-      <working_directory value="$PROJECT_DIR$/fmtx" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/qtoad/xgo-plusplus/fmtx" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^TestGoSyntax$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_MapToStruct in github.com/qtoad/xgo-plusplus/ini.v1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -104,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestBase_Get in github.com/qtoad/xgo-plusplus/html" />
         <item itemvalue="Go Test.go test xgo-plusplus" />
         <item itemvalue="Go Test.Test_isSlice in github.com/qtoad/xgo-plusplus/ini.v1" />
         <item itemvalue="Go Test.TestEmpty in github.com/qtoad/xgo-plusplus/ini.v1" />
         <item itemvalue="Go Test.Test_MapToStruct in github.com/qtoad/xgo-plusplus/ini.v1" />
-        <item itemvalue="Go Test.TestGoSyntax in github.com/qtoad/xgo-plusplus/fmtx" />
       </list>
     </recent_temporary>
   </component>
@@ -130,38 +133,38 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2" timestamp="1613441577253">
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2" timestamp="1613454179037">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613441577253" />
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613454179037" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="647" y="302" key="EnvironmentVariablesDialog/0.23.1440.828@0.23.1440.828" timestamp="1613441341376" />
-    <state width="1342" height="149" key="GridCell.Tab.0.bottom" timestamp="1613441489500">
+    <state width="1342" height="118" key="GridCell.Tab.0.bottom" timestamp="1613454196086">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613441489500" />
-    <state width="1342" height="149" key="GridCell.Tab.0.center" timestamp="1613441489500">
+    <state width="1342" height="118" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613454196086" />
+    <state width="1342" height="118" key="GridCell.Tab.0.center" timestamp="1613454196085">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613441489500" />
-    <state width="1342" height="149" key="GridCell.Tab.0.left" timestamp="1613441489499">
+    <state width="1342" height="118" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613454196085" />
+    <state width="1342" height="118" key="GridCell.Tab.0.left" timestamp="1613454196084">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613441489499" />
-    <state width="1342" height="149" key="GridCell.Tab.0.right" timestamp="1613441489500">
+    <state width="1342" height="118" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613454196084" />
+    <state width="1342" height="118" key="GridCell.Tab.0.right" timestamp="1613454196085">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613441489500" />
+    <state width="1342" height="118" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613454196085" />
     <state x="258" y="72" key="SettingsEditor" timestamp="1613441342810">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613441584330">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613454185159">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613441584330" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613454185159" />
     <state x="752" y="188" width="604" height="490" key="find.popup" timestamp="1613439172076">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
