@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/checkers.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/checkers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/checkers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/checkers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/fixture_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/fixture_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/foundation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/foundation_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/helpers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/integration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/integration_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/printer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/printer_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/reporter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/reporter_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.v1/run_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/run_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diff/diff.go" beforeDir="false" afterPath="$PROJECT_DIR$/diff/diff.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diff/diff_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/diff/diff_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmtx/formatter.go" beforeDir="false" afterPath="$PROJECT_DIR$/fmtx/formatter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/bench_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/bench_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/file_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/helper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/helper_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/ini_python_multiline_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/ini_python_multiline_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/ini_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/ini_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/key_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/key_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/parser_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/section_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/section_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini.v1/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/struct_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typex/typex.go" beforeDir="false" afterPath="$PROJECT_DIR$/typex/typex.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typex/zero.go" beforeDir="false" afterPath="$PROJECT_DIR$/typex/zero.go" afterDir="false" />
-    </list>
+    <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add by wang 2021-02-15" />
-    <option name="LAST_COMMIT_MESSAGE" value="add by wang 2021-02-15" />
+    <MESSAGE value="添加diff方法，add by wang 2021-02-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加diff方法，add by wang 2021-02-16" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -154,38 +130,38 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2" timestamp="1613438965362">
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2" timestamp="1613441577253">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613438965362" />
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613441577253" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="647" y="302" key="EnvironmentVariablesDialog/0.23.1440.828@0.23.1440.828" timestamp="1613441341376" />
-    <state width="1342" height="149" key="GridCell.Tab.0.bottom" timestamp="1613441298943">
+    <state width="1342" height="149" key="GridCell.Tab.0.bottom" timestamp="1613441489500">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613441298943" />
-    <state width="1342" height="149" key="GridCell.Tab.0.center" timestamp="1613441298942">
+    <state width="1342" height="149" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613441489500" />
+    <state width="1342" height="149" key="GridCell.Tab.0.center" timestamp="1613441489500">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613441298942" />
-    <state width="1342" height="149" key="GridCell.Tab.0.left" timestamp="1613441298942">
+    <state width="1342" height="149" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613441489500" />
+    <state width="1342" height="149" key="GridCell.Tab.0.left" timestamp="1613441489499">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613441298942" />
-    <state width="1342" height="149" key="GridCell.Tab.0.right" timestamp="1613441298943">
+    <state width="1342" height="149" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613441489499" />
+    <state width="1342" height="149" key="GridCell.Tab.0.right" timestamp="1613441489500">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1342" height="149" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613441298943" />
+    <state width="1342" height="149" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613441489500" />
     <state x="258" y="72" key="SettingsEditor" timestamp="1613441342810">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613384803014">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613441584330">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613384803014" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613441584330" />
     <state x="752" y="188" width="604" height="490" key="find.popup" timestamp="1613439172076">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
