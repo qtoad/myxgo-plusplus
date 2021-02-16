@@ -2,14 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/diff/diff.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diff/diff_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fmtx/fmtx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fmtx/fmtx_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fmtx/formatter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fmtx/formatter_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/indent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/indent_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/wrap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/wrap_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/typex/typex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/typex/zero.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ini/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/file_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yaml/decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/decode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/benchmark.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/benchmark.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/benchmark_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/benchmark_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/bootstrap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/bootstrap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/check.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/check.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/check_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/check_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/checkers.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/checkers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/checkers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/checkers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/export_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/export_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/fixture_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/fixture_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/foundation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/foundation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/helpers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/integration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/integration_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/printer.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/printer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/printer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/printer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/reporter.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/reporter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/reporter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/reporter_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/run.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/run.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/run_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check.v1/run_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/bench_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/bench_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/codecov.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/codecov.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/data_source.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/data_source.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/deprecated.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/deprecated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/file_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/helper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/helper_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/ini.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/ini.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/ini_python_multiline_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/ini_python_multiline_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/ini_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/ini_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/key.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/key.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/key_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/key_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/parser_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/section.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/section.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/section_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/section_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/testdata/TestFile_WriteTo.golden" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/testdata/TestFile_WriteTo.golden" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/testdata/UTF-16-BE-BOM.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/testdata/UTF-16-BE-BOM.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/testdata/UTF-16-LE-BOM.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/testdata/UTF-16-LE-BOM.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/testdata/UTF-8-BOM.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/testdata/UTF-8-BOM.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/testdata/full.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/testdata/full.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/testdata/minimal.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/testdata/minimal.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/testdata/multiline.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ini.v1/testdata/multiline.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/LICENSE.libyaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/LICENSE.libyaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/NOTICE" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/NOTICE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/apic.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/apic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/decode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/emitterc.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/emitterc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/encode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/example_embedded_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/example_embedded_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/parserc.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/parserc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/readerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/readerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/resolve.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/resolve.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/scannerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/scannerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/sorter.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/sorter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/suite_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/suite_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/writerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/writerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/yaml.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/yaml.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/yamlh.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/yamlh.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/yamlprivateh.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml.v2/yamlprivateh.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -24,6 +114,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -35,7 +126,26 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/typx" />
+      <recent name="$PROJECT_DIR$/diff" />
+      <recent name="$PROJECT_DIR$/fmtx" />
+      <recent name="$PROJECT_DIR$/text" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestGoSyntax in github.com/qtoad/xgo-plusplus/fmtx">
+    <configuration name="Test in github.com/qtoad/xgo-plusplus/check.v1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="xgo-plusplus" />
+      <working_directory value="$PROJECT_DIR$/check.v1" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/qtoad/xgo-plusplus/check.v1" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^Test$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestEmpty in github.com/qtoad/xgo-plusplus/ini.v1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="xgo-plusplus" />
       <working_directory value="$PROJECT_DIR$/ini.v1" />
@@ -47,8 +157,21 @@
       <pattern value="^TestEmpty$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestGoSyntax in github.com/qtoad/xgo-plusplus/fmtx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="xgo-plusplus" />
+      <working_directory value="$PROJECT_DIR$/fmtx" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/qtoad/xgo-plusplus/fmtx" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestGoSyntax$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGoSyntax in github.com/qtoad/xgo-plusplus/fmtx" />
+        <item itemvalue="Go Test.Test in github.com/qtoad/xgo-plusplus/check.v1" />
         <item itemvalue="Go Test.TestEmpty in github.com/qtoad/xgo-plusplus/ini.v1" />
       </list>
     </recent_temporary>
@@ -65,29 +188,33 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="317" y="23" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613382428995">
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2" timestamp="1613384797582">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="317" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613382428995" />
-    <state width="1358" height="200" key="GridCell.Tab.0.bottom" timestamp="1613383120732">
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613384797582" />
+    <state width="1358" height="22" key="GridCell.Tab.0.bottom" timestamp="1613436909645">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1358" height="200" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613383120732" />
-    <state width="1358" height="200" key="GridCell.Tab.0.center" timestamp="1613383120731">
+    <state width="1358" height="22" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613436909645" />
+    <state width="1358" height="22" key="GridCell.Tab.0.center" timestamp="1613436909644">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1358" height="200" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613383120731" />
-    <state width="1358" height="200" key="GridCell.Tab.0.left" timestamp="1613383120731">
+    <state width="1358" height="22" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613436909644" />
+    <state width="1358" height="22" key="GridCell.Tab.0.left" timestamp="1613436909644">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1358" height="200" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613383120731" />
-    <state width="1358" height="200" key="GridCell.Tab.0.right" timestamp="1613383120732">
+    <state width="1358" height="22" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613436909644" />
+    <state width="1358" height="22" key="GridCell.Tab.0.right" timestamp="1613436909644">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1358" height="200" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613383120732" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613380071906">
+    <state width="1358" height="22" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613436909644" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613384803014">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613380071906" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613384803014" />
+    <state x="752" y="188" width="604" height="490" key="find.popup" timestamp="1613438362342">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="752" y="188" width="604" height="490" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1613438362342" />
   </component>
 </project>

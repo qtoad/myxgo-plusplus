@@ -14,7 +14,7 @@ package check_test
 
 import (
 	"fmt"
-	"github.com/qtoad/xgo-plusplus/check"
+	"github.com/qtoad/xgo-plusplus/check.v1"
 	"strings"
 )
 

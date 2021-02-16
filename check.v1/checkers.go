@@ -5,8 +5,7 @@ import (
 	"reflect"
 	"regexp"
 	"strings"
-
-	"github.com/niemeyer/pretty"
+	//"github.com/niemeyer/pretty"
 )
 
 // -----------------------------------------------------------------------
