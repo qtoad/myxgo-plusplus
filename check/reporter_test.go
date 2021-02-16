@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	. "github.com/qtoad/xgo-plusplus/check.v1"
+	. "github.com/qtoad/xgo-plusplus/check"
 )
 
 var _ = Suite(&reporterS{})

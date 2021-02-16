@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/qtoad/xgo-plusplus/ini.v1"
+	"github.com/qtoad/xgo-plusplus/ini"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
@@ -38,8 +38,8 @@ func TestKey_AddShadow(t *testing.T) {
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
 
-		So(k.AddShadow("ini.v1"), ShouldBeNil)
-		So(k.ValueWithShadows(), ShouldResemble, []string{"ini", "ini.v1"})
+		So(k.AddShadow("ini"), ShouldBeNil)
+		So(k.ValueWithShadows(), ShouldResemble, []string{"ini", "ini"})
 
 		Convey("Add shadow to boolean key", func() {
 			k, err := f.Section("").NewBooleanKey("published")
@@ -61,7 +61,7 @@ func TestKey_AddShadow(t *testing.T) {
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
 
-		So(k.AddShadow("ini.v1"), ShouldNotBeNil)
+		So(k.AddShadow("ini"), ShouldNotBeNil)
 	})
 }
 
@@ -130,7 +130,7 @@ func TestKey_Helpers(t *testing.T) {
 				return in
 			}), ShouldEqual, "ini")
 			So(sec.Key("NAME").Comment, ShouldEqual, "; Package name")
-			So(sec.Key("IMPORT_PATH").String(), ShouldEqual, "gopkg.in/ini.v1")
+			So(sec.Key("IMPORT_PATH").String(), ShouldEqual, "gopkg.in/ini")
 
 			Convey("With ValueMapper", func() {
 				f.ValueMapper = func(in string) string {
@@ -151,7 +151,7 @@ func TestKey_Helpers(t *testing.T) {
 
 			sec = f.Section("package")
 			So(sec, ShouldNotBeNil)
-			So(sec.Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini.v1")
+			So(sec.Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini")
 		})
 
 		Convey("Get auto-increment key names", func() {
@@ -180,8 +180,8 @@ func TestKey_Helpers(t *testing.T) {
 		})
 
 		Convey("Get parent section value", func() {
-			So(f.Section("package.sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini.v1")
-			So(f.Section("package.fake.sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini.v1")
+			So(f.Section("package.sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini")
+			So(f.Section("package.fake.sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini")
 		})
 
 		Convey("Get multiple line value", func() {
@@ -511,8 +511,8 @@ func TestKey_SetValue(t *testing.T) {
 		So(k, ShouldNotBeNil)
 		So(k.Value(), ShouldEqual, "ini")
 
-		k.SetValue("ini.v1")
-		So(k.Value(), ShouldEqual, "ini.v1")
+		k.SetValue("ini")
+		So(k.Value(), ShouldEqual, "ini")
 	})
 }
 

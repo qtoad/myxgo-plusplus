@@ -16,7 +16,7 @@ package ini_test
 
 import (
 	"bytes"
-	"github.com/qtoad/xgo-plusplus/ini.v1"
+	"github.com/qtoad/xgo-plusplus/ini"
 	"io/ioutil"
 	"runtime"
 	"testing"

@@ -17,7 +17,7 @@ package ini_test
 import (
 	"testing"
 
-	"github.com/qtoad/xgo-plusplus/ini.v1"
+	"github.com/qtoad/xgo-plusplus/ini"
 )
 
 func newTestFile(block bool) *ini.File {

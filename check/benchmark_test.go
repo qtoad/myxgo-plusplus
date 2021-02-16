@@ -3,7 +3,7 @@
 package check_test
 
 import (
-	. "github.com/qtoad/xgo-plusplus/check.v1"
+	. "github.com/qtoad/xgo-plusplus/check"
 	"time"
 )
 

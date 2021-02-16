@@ -17,7 +17,7 @@ package ini_test
 import (
 	"testing"
 
-	"github.com/qtoad/xgo-plusplus/ini.v1"
+	"github.com/qtoad/xgo-plusplus/ini"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
@@ -60,12 +60,12 @@ func TestSection_NewKey(t *testing.T) {
 		So(k.Value(), ShouldEqual, "ini")
 
 		Convey("With duplicated name", func() {
-			k, err := f.Section("").NewKey("NAME", "ini.v1")
+			k, err := f.Section("").NewKey("NAME", "ini")
 			So(err, ShouldBeNil)
 			So(k, ShouldNotBeNil)
 
 			// Overwrite previous existed key
-			So(k.Value(), ShouldEqual, "ini.v1")
+			So(k.Value(), ShouldEqual, "ini")
 		})
 
 		Convey("With empty string", func() {
@@ -82,11 +82,11 @@ func TestSection_NewKey(t *testing.T) {
 		k, err := f.Section("").NewKey("NAME", "ini")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
-		k, err = f.Section("").NewKey("NAME", "ini.v1")
+		k, err = f.Section("").NewKey("NAME", "ini")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
 
-		So(k.ValueWithShadows(), ShouldResemble, []string{"ini", "ini.v1"})
+		So(k.ValueWithShadows(), ShouldResemble, []string{"ini", "ini"})
 	})
 }
 
@@ -214,7 +214,7 @@ func TestSection_Keys(t *testing.T) {
 		k, err = f.Section("").NewKey("VERSION", "v1")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
-		k, err = f.Section("").NewKey("IMPORT_PATH", "gopkg.in/ini.v1")
+		k, err = f.Section("").NewKey("IMPORT_PATH", "gopkg.in/ini")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
 
@@ -238,7 +238,7 @@ func TestSection_ParentKeys(t *testing.T) {
 		k, err = f.Section("package").NewKey("VERSION", "v1")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
-		k, err = f.Section("package").NewKey("IMPORT_PATH", "gopkg.in/ini.v1")
+		k, err = f.Section("package").NewKey("IMPORT_PATH", "gopkg.in/ini")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
 
@@ -262,7 +262,7 @@ func TestSection_KeyStrings(t *testing.T) {
 		k, err = f.Section("").NewKey("VERSION", "v1")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
-		k, err = f.Section("").NewKey("IMPORT_PATH", "gopkg.in/ini.v1")
+		k, err = f.Section("").NewKey("IMPORT_PATH", "gopkg.in/ini")
 		So(err, ShouldBeNil)
 		So(k, ShouldNotBeNil)
 

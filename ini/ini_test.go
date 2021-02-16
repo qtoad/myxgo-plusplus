@@ -20,7 +20,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/qtoad/xgo-plusplus/ini.v1"
+	"github.com/qtoad/xgo-plusplus/ini"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
@@ -65,7 +65,7 @@ func TestLoad(t *testing.T) {
 		sec := f.Section("")
 		So(sec.Key("NAME").String(), ShouldEqual, "ini")
 		So(sec.Key("VERSION").String(), ShouldEqual, "v1")
-		So(sec.Key("IMPORT_PATH").String(), ShouldEqual, "gopkg.in/ini.v1")
+		So(sec.Key("IMPORT_PATH").String(), ShouldEqual, "gopkg.in/ini")
 
 		sec = f.Section("author")
 		So(sec.Key("NAME").String(), ShouldEqual, "Unknwon")
@@ -1317,7 +1317,7 @@ GITHUB = U;n;k;n;w;o;n
 				k, err = f.Section("package").NewKey("VERSION", "v1")
 				So(err, ShouldBeNil)
 				So(k, ShouldNotBeNil)
-				k, err = f.Section("package").NewKey("IMPORT_PATH", "gopkg.in/ini.v1")
+				k, err = f.Section("package").NewKey("IMPORT_PATH", "gopkg.in/ini")
 				So(err, ShouldBeNil)
 				So(k, ShouldNotBeNil)
 
@@ -1343,8 +1343,8 @@ GITHUB = U;n;k;n;w;o;n
 				})
 
 				Convey("Get parent section value", func() {
-					So(f.Section("package:sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini.v1")
-					So(f.Section("package:fake:sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini.v1")
+					So(f.Section("package:sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini")
+					So(f.Section("package:fake:sub").Key("CLONE_URL").String(), ShouldEqual, "https://gopkg.in/ini")
 				})
 			})
 
