@@ -116,12 +116,12 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 		if showType {
 			io.WriteString(p, t.String())
 		}
-		typex.writeByte(p, '{')
-		if nonzero(v) {
+		typex.WriteByte(p, '{')
+		if typex.Nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
-				writeByte(p, '\n')
+				typex.WriteByte(p, '\n')
 				pp = p.indent()
 			}
 			keys := v.MapKeys()
@@ -129,9 +129,9 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 				k := keys[i]
 				mv := v.MapIndex(k)
 				pp.printValue(k, false, true)
-				writeByte(pp, ':')
+				typex.WriteByte(pp, ':')
 				if expand {
-					writeByte(pp, '\t')
+					typex.WriteByte(pp, '\t')
 				}
 				showTypeInStruct := t.Elem().Kind() == reflect.Interface
 				pp.printValue(mv, showTypeInStruct, true)
@@ -145,7 +145,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 				pp.tw.Flush()
 			}
 		}
-		writeByte(p, '}')
+		typex.WriteByte(p, '}')
 	case reflect.Struct:
 		t := v.Type()
 		if v.CanAddr() {
@@ -161,25 +161,25 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 		if showType {
 			io.WriteString(p, t.String())
 		}
-		writeByte(p, '{')
-		if nonzero(v) {
+		typex.WriteByte(p, '{')
+		if typex.Nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
-				writeByte(p, '\n')
+				typex.WriteByte(p, '\n')
 				pp = p.indent()
 			}
 			for i := 0; i < v.NumField(); i++ {
 				showTypeInStruct := true
 				if f := t.Field(i); f.Name != "" {
 					io.WriteString(pp, f.Name)
-					writeByte(pp, ':')
+					typex.WriteByte(pp, ':')
 					if expand {
-						writeByte(pp, '\t')
+						typex.WriteByte(pp, '\t')
 					}
 					showTypeInStruct = labelType(f.Type)
 				}
-				pp.printValue(getField(v, i), showTypeInStruct, true)
+				pp.printValue(typex.GetField(v, i), showTypeInStruct, true)
 				if expand {
 					io.WriteString(pp, ",\n")
 				} else if i < v.NumField()-1 {
@@ -190,7 +190,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 				pp.tw.Flush()
 			}
 		}
-		writeByte(p, '}')
+		typex.WriteByte(p, '}')
 	case reflect.Interface:
 		switch e := v.Elem(); {
 		case e.Kind() == reflect.Invalid:
@@ -216,11 +216,11 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 			io.WriteString(p, "nil")
 			break
 		}
-		writeByte(p, '{')
+		typex.WriteByte(p, '{')
 		expand := !canInline(v.Type())
 		pp := p
 		if expand {
-			writeByte(p, '\n')
+			typex.WriteByte(p, '\n')
 			pp = p.indent()
 		}
 		for i := 0; i < v.Len(); i++ {
@@ -235,23 +235,23 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 		if expand {
 			pp.tw.Flush()
 		}
-		writeByte(p, '}')
+		typex.WriteByte(p, '}')
 	case reflect.Ptr:
 		e := v.Elem()
 		if !e.IsValid() {
-			writeByte(p, '(')
+			typex.WriteByte(p, '(')
 			io.WriteString(p, v.Type().String())
 			io.WriteString(p, ")(nil)")
 		} else {
 			pp := *p
 			pp.depth++
-			writeByte(pp, '&')
+			typex.WriteByte(pp, '&')
 			pp.printValue(e, true, true)
 		}
 	case reflect.Chan:
 		x := v.Pointer()
 		if showType {
-			writeByte(p, '(')
+			typex.WriteByte(p, '(')
 			io.WriteString(p, v.Type().String())
 			fmt.Fprintf(p, ")(%#v)", x)
 		} else {

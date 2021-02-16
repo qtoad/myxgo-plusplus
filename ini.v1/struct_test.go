@@ -21,9 +21,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qtoad/xgo-plusplus/ini.v1"
 	. "github.com/smartystreets/goconvey/convey"
-
-	"github.com/qtoad/xgo-plusplus/ini"
 )
 
 type testNested struct {

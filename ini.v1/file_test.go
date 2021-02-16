@@ -16,10 +16,12 @@ package ini_test
 
 import (
 	"bytes"
-	"github.com/qtoad/xgo-plusplus/ini"
+	"github.com/qtoad/xgo-plusplus/ini.v1"
 	"io/ioutil"
 	"runtime"
 	"testing"
+
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestEmpty(t *testing.T) {

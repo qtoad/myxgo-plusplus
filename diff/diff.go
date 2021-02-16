@@ -2,10 +2,22 @@ package diff
 
 import (
 	"fmt"
-	"github.com/qtoad/xgo-plusplus/fmtx"
 	"io"
 	"reflect"
 )
+
+type formatter struct {
+	v     reflect.Value
+	force bool
+	quote bool
+}
+
+// printValue must keep track of already-printed pointer values to avoid
+// infinite recursion.
+type visit struct {
+	v   uintptr
+	typ reflect.Type
+}
 
 type sbuf []string
 

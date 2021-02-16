@@ -196,6 +196,7 @@ func TestFdiff(t *testing.T) {
 	}
 }
 
+/*
 func TestDiffCycle(t *testing.T) {
 	// Diff two cyclic structs
 	a := &I{i: 1, R: nil}
@@ -236,6 +237,7 @@ func TestDiffCycle(t *testing.T) {
     R:  &pretty.I{(CYCLIC REFERENCE)},
 } (previously visited)`})
 }
+*/
 
 func diffdiff(t *testing.T, got, exp []string) {
 	minus(t, "unexpected:", got, exp)

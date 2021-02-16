@@ -17,7 +17,7 @@ package ini_test
 import (
 	"testing"
 
-	"github.com/qtoad/xgo-plusplus/ini"
+	"github.com/qtoad/xgo-plusplus/ini.v1"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

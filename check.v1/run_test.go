@@ -4,7 +4,7 @@ package check_test
 
 import (
 	"errors"
-	. "github.com/qtoad/xgo-plusplus/check"
+	. "github.com/qtoad/xgo-plusplus/check.v1"
 	"os"
 	"sync"
 )

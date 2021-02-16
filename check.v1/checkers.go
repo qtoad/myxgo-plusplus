@@ -2,10 +2,10 @@ package check
 
 import (
 	"fmt"
+	"github.com/qtoad/xgo-plusplus/diff"
 	"reflect"
 	"regexp"
 	"strings"
-	//"github.com/niemeyer/pretty"
 )
 
 // -----------------------------------------------------------------------
@@ -192,7 +192,7 @@ func formatUnequal(obtained interface{}, expected interface{}) string {
 		l2 := strings.Split(bStr, "\n")
 		// the "2" here is a bit arbitrary
 		if len(l1) > 2 && len(l2) > 2 {
-			diff := pretty.Diff(l1, l2)
+			diff := diff.Diff(l1, l2)
 			return fmt.Sprintf(`String difference:
 %s`, formatMultiLine(strings.Join(diff, "\n"), false))
 		}
@@ -201,7 +201,7 @@ func formatUnequal(obtained interface{}, expected interface{}) string {
 	}
 
 	// generic diff
-	diff := pretty.Diff(obtained, expected)
+	diff := diff.Diff(obtained, expected)
 	if len(diff) == 0 {
 		// No diff, this happens when e.g. just struct
 		// pointers are different but the structs have

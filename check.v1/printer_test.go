@@ -1,7 +1,7 @@
 package check_test
 
 import (
-	. "github.com/qtoad/xgo-plusplus/check"
+	. "github.com/qtoad/xgo-plusplus/check.v1"
 )
 
 var _ = Suite(&PrinterS{})
