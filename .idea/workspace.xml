@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/randhex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randhex/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randhex/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randhex/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randhex/randhex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randhex/randhex_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/formatter.go" beforeDir="false" afterPath="$PROJECT_DIR$/fmtx/formatter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typex/typex.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typex/zero.go" beforeDir="false" afterPath="$PROJECT_DIR$/fmtx/zero.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,38 +142,38 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2" timestamp="1613456054213">
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2" timestamp="1613469104747">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613456054212" />
+    <state x="0" y="23" width="1440" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613469104747" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="647" y="302" key="EnvironmentVariablesDialog/0.23.1440.828@0.23.1440.828" timestamp="1613441341376" />
-    <state width="1148" height="118" key="GridCell.Tab.0.bottom" timestamp="1613455978535">
+    <state width="1148" height="215" key="GridCell.Tab.0.bottom" timestamp="1613469117434">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1148" height="118" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613455978535" />
-    <state width="1148" height="118" key="GridCell.Tab.0.center" timestamp="1613455978533">
+    <state width="1148" height="215" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613469117434" />
+    <state width="1148" height="215" key="GridCell.Tab.0.center" timestamp="1613469117433">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1148" height="118" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613455978533" />
-    <state width="1148" height="118" key="GridCell.Tab.0.left" timestamp="1613455978532">
+    <state width="1148" height="215" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613469117433" />
+    <state width="1148" height="215" key="GridCell.Tab.0.left" timestamp="1613469117433">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1148" height="118" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613455978532" />
-    <state width="1148" height="118" key="GridCell.Tab.0.right" timestamp="1613455978534">
+    <state width="1148" height="215" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613469117433" />
+    <state width="1148" height="215" key="GridCell.Tab.0.right" timestamp="1613469117434">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1148" height="118" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613455978534" />
+    <state width="1148" height="215" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613469117434" />
     <state x="258" y="72" key="SettingsEditor" timestamp="1613441342810">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613456552909">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613469108177">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613456552909" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613469108177" />
     <state x="752" y="188" width="604" height="490" key="find.popup" timestamp="1613439172076">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

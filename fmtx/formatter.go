@@ -8,7 +8,6 @@ import (
 	"text/tabwriter"
 
 	"github.com/qtoad/xgo-plusplus/text"
-	"github.com/qtoad/xgo-plusplus/typex"
 )
 
 type formatter struct {
@@ -116,12 +115,12 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 		if showType {
 			io.WriteString(p, t.String())
 		}
-		typex.WriteByte(p, '{')
-		if typex.Nonzero(v) {
+		writeByte(p, '{')
+		if nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
-				typex.WriteByte(p, '\n')
+				writeByte(p, '\n')
 				pp = p.indent()
 			}
 			keys := v.MapKeys()
@@ -129,9 +128,9 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 				k := keys[i]
 				mv := v.MapIndex(k)
 				pp.printValue(k, false, true)
-				typex.WriteByte(pp, ':')
+				writeByte(pp, ':')
 				if expand {
-					typex.WriteByte(pp, '\t')
+					writeByte(pp, '\t')
 				}
 				showTypeInStruct := t.Elem().Kind() == reflect.Interface
 				pp.printValue(mv, showTypeInStruct, true)
@@ -145,7 +144,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 				pp.tw.Flush()
 			}
 		}
-		typex.WriteByte(p, '}')
+		writeByte(p, '}')
 	case reflect.Struct:
 		t := v.Type()
 		if v.CanAddr() {
@@ -161,25 +160,25 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 		if showType {
 			io.WriteString(p, t.String())
 		}
-		typex.WriteByte(p, '{')
-		if typex.Nonzero(v) {
+		writeByte(p, '{')
+		if nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
-				typex.WriteByte(p, '\n')
+				writeByte(p, '\n')
 				pp = p.indent()
 			}
 			for i := 0; i < v.NumField(); i++ {
 				showTypeInStruct := true
 				if f := t.Field(i); f.Name != "" {
 					io.WriteString(pp, f.Name)
-					typex.WriteByte(pp, ':')
+					writeByte(pp, ':')
 					if expand {
-						typex.WriteByte(pp, '\t')
+						writeByte(pp, '\t')
 					}
 					showTypeInStruct = labelType(f.Type)
 				}
-				pp.printValue(typex.GetField(v, i), showTypeInStruct, true)
+				pp.printValue(getField(v, i), showTypeInStruct, true)
 				if expand {
 					io.WriteString(pp, ",\n")
 				} else if i < v.NumField()-1 {
@@ -190,7 +189,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 				pp.tw.Flush()
 			}
 		}
-		typex.WriteByte(p, '}')
+		writeByte(p, '}')
 	case reflect.Interface:
 		switch e := v.Elem(); {
 		case e.Kind() == reflect.Invalid:
@@ -216,11 +215,11 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 			io.WriteString(p, "nil")
 			break
 		}
-		typex.WriteByte(p, '{')
+		writeByte(p, '{')
 		expand := !canInline(v.Type())
 		pp := p
 		if expand {
-			typex.WriteByte(p, '\n')
+			writeByte(p, '\n')
 			pp = p.indent()
 		}
 		for i := 0; i < v.Len(); i++ {
@@ -235,23 +234,23 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 		if expand {
 			pp.tw.Flush()
 		}
-		typex.WriteByte(p, '}')
+		writeByte(p, '}')
 	case reflect.Ptr:
 		e := v.Elem()
 		if !e.IsValid() {
-			typex.WriteByte(p, '(')
+			writeByte(p, '(')
 			io.WriteString(p, v.Type().String())
 			io.WriteString(p, ")(nil)")
 		} else {
 			pp := *p
 			pp.depth++
-			typex.WriteByte(pp, '&')
+			writeByte(pp, '&')
 			pp.printValue(e, true, true)
 		}
 	case reflect.Chan:
 		x := v.Pointer()
 		if showType {
-			typex.WriteByte(p, '(')
+			writeByte(p, '(')
 			io.WriteString(p, v.Type().String())
 			fmt.Fprintf(p, ")(%#v)", x)
 		} else {
@@ -313,4 +312,16 @@ func (p *printer) fmtString(s string, quote bool) {
 		s = strconv.Quote(s)
 	}
 	io.WriteString(p, s)
+}
+
+func writeByte(w io.Writer, b byte) {
+	w.Write([]byte{b})
+}
+
+func getField(v reflect.Value, i int) reflect.Value {
+	val := v.Field(i)
+	if val.Kind() == reflect.Interface && !val.IsNil() {
+		val = val.Elem()
+	}
+	return val
 }

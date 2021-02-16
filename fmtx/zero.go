@@ -1,10 +1,10 @@
-package typex
+package fmtx
 
 import (
 	"reflect"
 )
 
-func Nonzero(v reflect.Value) bool {
+func nonzero(v reflect.Value) bool {
 	switch v.Kind() {
 	case reflect.Bool:
 		return v.Bool()
@@ -20,14 +20,14 @@ func Nonzero(v reflect.Value) bool {
 		return v.String() != ""
 	case reflect.Struct:
 		for i := 0; i < v.NumField(); i++ {
-			if Nonzero(GetField(v, i)) {
+			if nonzero(getField(v, i)) {
 				return true
 			}
 		}
 		return false
 	case reflect.Array:
 		for i := 0; i < v.Len(); i++ {
-			if Nonzero(v.Index(i)) {
+			if nonzero(v.Index(i)) {
 				return true
 			}
 		}
