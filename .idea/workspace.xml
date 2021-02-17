@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/http/open.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/file/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/http.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,10 +140,10 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613540774749">
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613546033044">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613540774749" />
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613546033044" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -171,17 +172,21 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613540778379">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613550059057">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613540778379" />
-    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613489717368">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613550059057" />
+    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613546200638">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1613489717368" />
+    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1613546200638" />
     <state x="765" y="323" width="604" height="490" key="find.popup" timestamp="1613469560518">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="765" y="323" width="604" height="490" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1613469560518" />
+    <state x="742" y="284" key="git4idea.ui.GitTagDialog" timestamp="1613550038563">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="742" y="284" key="git4idea.ui.GitTagDialog/0.23.1440.828@0.23.1440.828" timestamp="1613550038563" />
   </component>
 </project>
