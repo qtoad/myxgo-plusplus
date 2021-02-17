@@ -2,19 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/httpx/cookie.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httpx/request.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httpx/response.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/typex/set_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/intx.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netx/mail.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/cert/alipayCertPublicKey_RSA2.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/cert/alipayRootCert.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/cert/appCertPublicKey.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/cert/java_sdk.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/client_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/param.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/service_api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/ali/alipay/service_api_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/event/crypto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/event/crypto_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/event/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/event/message_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/event/reply.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/mch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/mch_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/order.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/order_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/pappay.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/pappay_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/redpack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/redpack_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/refund.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/refund_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/reply.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/transfer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mch/transfer_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/auth_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/image_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/media.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/media_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/message_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/mp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/mp_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/ocr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/ocr_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/other.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/other_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/plugin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/plugin_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/qrcode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/qrcode_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/security.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/mp/security_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/auth_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/image_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/kf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/kf_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/media.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/media_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/menu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/menu_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/message_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/oa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/oa_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/ocr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/ocr_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/popularize.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/popularize_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/reply.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/subscriber.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/oa/subscriber_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wechat.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/crypto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/crypto_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/helper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/helper_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/http_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openapi/wechat/wx/mock_api.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmtx/formatter.go" beforeDir="false" afterPath="$PROJECT_DIR$/fmtx/formatter.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpx/open.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpx/openuri.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typx/set.go" beforeDir="false" afterPath="$PROJECT_DIR$/typex/set.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typx/set_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/typx/zero.go" beforeDir="false" afterPath="$PROJECT_DIR$/typex/zero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/strs.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/strs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,16 +135,16 @@
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/httpx" />
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/fmtx" />
-      <recent name="$PROJECT_DIR$/typx" />
-      <recent name="$PROJECT_DIR$/util" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/netx" />
+      <recent name="$PROJECT_DIR$/util" />
+      <recent name="$PROJECT_DIR$/middleware/jwt" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/httpx" />
     </key>
   </component>
   <component name="RunManager" selected="Go Test.go test mygo-plusplus">
@@ -140,11 +221,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build ginx.go" />
       <item itemvalue="Go Test.formatter_test.go" />
       <item itemvalue="Go Test.go test mygo-plusplus" />
       <item itemvalue="Go Test.TestCompressedContent in github.com/qtoad/xgo-plusplus/util" />
       <item itemvalue="Go Test.TestIsUUID in github.com/qtoad/xgo-plusplus/uuid" />
-      <item itemvalue="Go Build.go build ginx.go" />
     </list>
     <recent_temporary>
       <list>
@@ -181,10 +262,10 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="369" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1613552813455" />
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613552928835">
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613567131692">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613552928835" />
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613567131692" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -213,10 +294,10 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613552932631">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613567135332">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613552932631" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613567135332" />
     <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613546200638">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
