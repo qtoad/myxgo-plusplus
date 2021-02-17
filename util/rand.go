@@ -30,7 +30,7 @@ func RandString(n int) string {
 	return RandStr(n, letterString)
 }
 
-func RandOrder(n int) string {
+func RandOrd(n int) string {
 	return time.Now().Format("20060102150405") + RandNumStr(n)
 }
 

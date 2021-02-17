@@ -5,7 +5,7 @@
 // It provides a function, Formatter, that can be used with any
 // function that accepts a format string. It also provides
 // convenience wrappers for functions in packages fmt and log.
-package fmtx
+package util
 
 import (
 	"fmt"

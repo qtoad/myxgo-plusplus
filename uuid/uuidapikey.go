@@ -13,13 +13,12 @@
 // limitations under the License.
 
 // Package uuidapikey contains generator, validator, and converter that transforms UUIDs into human-readable Base32-Crockford encoded API Keys
-package apikey
+package uuid
 
 // Dependencies
 import (
 	"encoding/json"
 	"github.com/qtoad/xgo-plusplus/crock32"
-	uuid2 "github.com/qtoad/xgo-plusplus/uuid"
 	"regexp"
 	"strconv"
 	"strings"
@@ -58,7 +57,7 @@ func IsUUID(uuid string) bool {
 	if uuid == "" {
 		panic("The required parameter UUID is undefined")
 	}
-	_, error := uuid2.ParseUUIDFromString(uuid)
+	_, error := ParseUUIDFromString(uuid)
 	if error != nil {
 		return false
 	}
@@ -132,7 +131,7 @@ func ToUUID(apiKey string) string {
 }
 
 // Check will verify both UUID and API Key, with either given
-func Check(uuid, apiKey string) bool {
+func CheckAPIKey(uuid, apiKey string) bool {
 	if uuid == "" {
 		panic("The required parameter UUID is undefined")
 	}
@@ -147,8 +146,8 @@ func Check(uuid, apiKey string) bool {
 }
 
 // Create will create new UUID and API Key
-func CreateUUIDAndAPIKey() string {
-	uuid := uuid2.UUID4().String()
+func CreateUUIDAPIKey() string {
+	uuid := UUID4().String()
 	apiKey := ToAPIKey(uuid)
 	pair := map[string]string{"uuid": uuid, "apiKey": apiKey}
 	jsonPair, err := json.Marshal(pair)

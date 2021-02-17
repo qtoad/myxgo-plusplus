@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package apikey
+package uuid
 
 import (
 	"reflect"
@@ -81,8 +81,8 @@ func TestToAPIKey(t *testing.T) {
 
 func TestCheck(t *testing.T) {
 	for _, test := range tests {
-		if !reflect.DeepEqual(true, Check(test.uuid, test.apiKey)) {
-			t.Errorf("Got %v, expected %v", Check(test.uuid, test.apiKey), true)
+		if !reflect.DeepEqual(true, CheckAPIKey(test.uuid, test.apiKey)) {
+			t.Errorf("Got %v, expected %v", CheckAPIKey(test.uuid, test.apiKey), true)
 		}
 	}
 }

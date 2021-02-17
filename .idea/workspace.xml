@@ -2,38 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apikey/apikey.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apikey/apikey_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crock32/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crock32/crock32.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crock32/sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/elements.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/example_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/if.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/modd.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/tag_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlgo/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/str/set.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/str/set_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/str/str.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/randx.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/util.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/util_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uuid/uuid.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uuid/uuid_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/imgext.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/imgext_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/Http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/textcolor.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/json.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/md5.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/md5_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/parse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/rexp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/set_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/time.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randhex/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/randhex/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/randhex/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/randhex/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/randhex/randhex.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/randhex/randhex_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apikey/apikey.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuid/uuidapikey.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apikey/apikey_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuid/uuidapikey_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/fmtx.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/fmtx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/fmtx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/fmtx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/formatter.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/formatter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/formatter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/formatter_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/zero.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/zero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/str/set.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/set.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/str/set_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/str/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/strs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/randx.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/rand.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/util_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,18 +61,22 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/html" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/apikey" />
+      <recent name="$PROJECT_DIR$/util" />
+      <recent name="$PROJECT_DIR$/lolly" />
+      <recent name="$PROJECT_DIR$/http" />
       <recent name="$PROJECT_DIR$/uuid" />
-      <recent name="$PROJECT_DIR$/str" />
-      <recent name="$PROJECT_DIR$/fmtx" />
+      <recent name="$PROJECT_DIR$/file" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html" />
+      <recent name="$PROJECT_DIR$/util" />
     </key>
   </component>
   <component name="RunManager" selected="Go Test.TestCompressedContent in github.com/qtoad/xgo-plusplus/util">
@@ -152,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add by wang 2021-02-15" />
     <MESSAGE value="添加diff方法，add by wang 2021-02-16" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加diff方法，add by wang 2021-02-16" />
+    <MESSAGE value="add by wang 2021-02-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="add by wang 2021-02-16" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -163,10 +162,10 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613469693434">
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613489602557">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613469693434" />
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613489602557" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -191,14 +190,14 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613469707098">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613489713460">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613469707098" />
-    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613469715334">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613489713460" />
+    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613489717368">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1613469715334" />
+    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1613489717368" />
     <state x="765" y="323" width="604" height="490" key="find.popup" timestamp="1613469560518">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
