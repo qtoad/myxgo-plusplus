@@ -20,7 +20,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/qtoad/xgo-plusplus/ini"
+	"github.com/qtoad/mygo-plusplus/ini"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

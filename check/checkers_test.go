@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"runtime"
 
-	"github.com/qtoad/xgo-plusplus/check"
+	"github.com/qtoad/mygo-plusplus/check"
 )
 
 type CheckersS struct{}

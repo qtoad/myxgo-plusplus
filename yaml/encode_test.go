@@ -11,8 +11,8 @@ import (
 	"net"
 	"os"
 
-	. "github.com/qtoad/xgo-plusplus/check"
-	"github.com/qtoad/xgo-plusplus/yaml"
+	. "github.com/qtoad/mygo-plusplus/check"
+	"github.com/qtoad/mygo-plusplus/yaml"
 )
 
 var marshalIntTest = 123

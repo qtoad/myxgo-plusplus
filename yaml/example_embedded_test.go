@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/qtoad/xgo-plusplus/yaml"
+	"github.com/qtoad/mygo-plusplus/yaml"
 )
 
 // An example showing how to unmarshal embedded

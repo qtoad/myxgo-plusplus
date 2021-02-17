@@ -1,4 +1,4 @@
-module github.com/qtoad/xgo-plusplus
+module github.com/qtoad/mygo-plusplus
 
 go 1.13
 

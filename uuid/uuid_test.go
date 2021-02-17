@@ -2,7 +2,7 @@ package uuid_test
 
 import (
 	"fmt"
-	"github.com/qtoad/xgo-plusplus/uuid"
+	"github.com/qtoad/mygo-plusplus/uuid"
 	"testing"
 )
 

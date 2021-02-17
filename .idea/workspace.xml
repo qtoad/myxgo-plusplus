@@ -2,9 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/http/open.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/http/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xgo-plusplus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mygo-plusplus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/benchmark_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/benchmark_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/bootstrap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/bootstrap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/check_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/check_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/checkers.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/checkers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/checkers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/checkers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/fixture_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/fixture_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/foundation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/foundation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/helpers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/integration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/integration_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/printer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/printer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/reporter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/reporter_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check/run_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/check/run_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/fmtx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/fmtx/fmtx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmtx/formatter.go" beforeDir="false" afterPath="$PROJECT_DIR$/fmtx/formatter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlgo/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/htmlgo/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlgo/tag_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/htmlgo/tag_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/bench_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/bench_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/file_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/ini_python_multiline_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/ini_python_multiline_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/ini_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/ini_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/key_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/key_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/parser_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/section_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/section_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ini/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ini/struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uuid/uuid_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuid/uuid_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uuid/uuidapikey.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuid/uuidapikey.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/decode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/encode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/example_embedded_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/example_embedded_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/suite_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/suite_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +88,19 @@
       <recent name="$PROJECT_DIR$/lolly" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test xgo-plusplus">
+  <component name="RunManager" selected="Go Test.go test mygo-plusplus">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="mygo-plusplus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="github.com/qtoad/xgo-plusplus" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestCompressedContent in github.com/qtoad/xgo-plusplus/util" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="xgo-plusplus" />
+      <module name="mygo-plusplus" />
       <working_directory value="$PROJECT_DIR$/util" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
@@ -69,7 +111,7 @@
       <method v="2" />
     </configuration>
     <configuration name="TestIsUUID in github.com/qtoad/xgo-plusplus/uuid" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="xgo-plusplus" />
+      <module name="mygo-plusplus" />
       <working_directory value="$PROJECT_DIR$/uuid" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
@@ -80,7 +122,7 @@
       <method v="2" />
     </configuration>
     <configuration name="TestKeyEqual in github.com/qtoad/xgo-plusplus/uuid" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="xgo-plusplus" />
+      <module name="mygo-plusplus" />
       <working_directory value="$PROJECT_DIR$/uuid" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
@@ -90,8 +132,19 @@
       <pattern value="^TestKeyEqual$" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="mygo-plusplus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/qtoad/xgo-plusplus" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="formatter_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="xgo-plusplus" />
+      <module name="mygo-plusplus" />
       <working_directory value="$PROJECT_DIR$/util" />
       <framework value="gotest" />
       <kind value="FILE" />
@@ -100,8 +153,8 @@
       <filePath value="$PROJECT_DIR$/util/formatter_test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go test xgo-plusplus" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="xgo-plusplus" />
+    <configuration name="go test mygo-plusplus" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="mygo-plusplus" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
@@ -110,9 +163,16 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Test.formatter_test.go" />
+      <item itemvalue="Go Test.go test mygo-plusplus" />
+      <item itemvalue="Go Test.TestCompressedContent in github.com/qtoad/xgo-plusplus/util" />
+      <item itemvalue="Go Test.TestIsUUID in github.com/qtoad/xgo-plusplus/uuid" />
+      <item itemvalue="Go Test.TestKeyEqual in github.com/qtoad/xgo-plusplus/uuid" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.go test xgo-plusplus" />
+        <item itemvalue="Go Test.go test mygo-plusplus" />
         <item itemvalue="Go Test.formatter_test.go" />
         <item itemvalue="Go Test.TestCompressedContent in github.com/qtoad/xgo-plusplus/util" />
         <item itemvalue="Go Test.TestIsUUID in github.com/qtoad/xgo-plusplus/uuid" />
@@ -140,10 +200,14 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613546033044">
+    <state x="369" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613552813455">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613546033044" />
+    <state x="369" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1613552813455" />
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613551353086">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613551353086" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -172,18 +236,18 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613550059057">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613551355749">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613550059057" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613551355749" />
     <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613546200638">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1613546200638" />
-    <state x="765" y="323" width="604" height="490" key="find.popup" timestamp="1613469560518">
+    <state x="635" y="23" width="604" height="548" key="find.popup" timestamp="1613552769182">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="765" y="323" width="604" height="490" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1613469560518" />
+    <state x="635" y="23" width="604" height="548" key="find.popup/0.23.1440.828@0.23.1440.828" timestamp="1613552769182" />
     <state x="742" y="284" key="git4idea.ui.GitTagDialog" timestamp="1613550038563">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
