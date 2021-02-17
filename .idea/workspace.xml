@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/file/file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/imgext.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/imgext_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/Http.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/textcolor.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/json.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/md5.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/md5_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/parse.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/rexp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/set_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/time.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apikey/apikey.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuid/uuidapikey.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apikey/apikey_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/uuid/uuidapikey_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmtx/fmtx.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/fmtx.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmtx/fmtx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/fmtx_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmtx/formatter.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/formatter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmtx/formatter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/formatter_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmtx/zero.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/zero.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/str/set.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/set.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/str/set_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/str/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/strs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/randx.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/rand.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/util.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/util_test.go" afterDir="false" />
-    </list>
+    <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +124,8 @@
     <MESSAGE value="add by wang 2021-02-15" />
     <MESSAGE value="添加diff方法，add by wang 2021-02-16" />
     <MESSAGE value="add by wang 2021-02-16" />
-    <option name="LAST_COMMIT_MESSAGE" value="add by wang 2021-02-16" />
+    <MESSAGE value="added by wang 2021-02-17" />
+    <option name="LAST_COMMIT_MESSAGE" value="added by wang 2021-02-17" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -162,10 +136,10 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613489602557">
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613522713211">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613489602557" />
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613522713211" />
     <state x="647" y="302" key="EnvironmentVariablesDialog" timestamp="1613441341376">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -186,14 +160,18 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="976" height="86" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613482931602" />
+    <state x="523" y="114" key="RollbackChangesDialog" timestamp="1613522681205">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="523" y="114" key="RollbackChangesDialog/0.23.1440.828@0.23.1440.828" timestamp="1613522681205" />
     <state x="258" y="72" key="SettingsEditor" timestamp="1613441342810">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613489713460">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613522717513">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613489713460" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613522717513" />
     <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613489717368">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

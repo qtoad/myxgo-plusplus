@@ -4,9 +4,12 @@ import (
 	"bytes"
 	"encoding/gob"
 	"fmt"
+	"html/template"
 	"math/rand"
 	"net/url"
 	"reflect"
+	"regexp"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -209,4 +212,76 @@ func computeTimeDiff(diff int64, m map[string]string) (int64, string) {
 		diff = 0
 	}
 	return diff, diffStr
+}
+
+func CompressedHTML(h *template.HTML) {
+	st := strings.Split(string(*h), "\n")
+	var ss []string
+	for i := 0; i < len(st); i++ {
+		st[i] = strings.TrimSpace(st[i])
+		if st[i] != "" {
+			ss = append(ss, st[i])
+		}
+	}
+	*h = template.HTML(strings.Join(ss, "\n"))
+}
+
+func CompareVersion(src, toCompare string) bool {
+	if toCompare == "" {
+		return false
+	}
+
+	exp, _ := regexp.Compile(`-(.*)`)
+	src = exp.ReplaceAllString(src, "")
+	toCompare = exp.ReplaceAllString(toCompare, "")
+
+	srcs := strings.Split(src, "v")
+	srcArr := strings.Split(srcs[1], ".")
+	op := ">"
+	srcs[0] = strings.TrimSpace(srcs[0])
+	if InArray([]string{">=", "<=", "=", ">", "<"}, srcs[0]) {
+		op = srcs[0]
+	}
+
+	toCompare = strings.ReplaceAll(toCompare, "v", "")
+
+	if op == "=" {
+		return srcs[1] == toCompare
+	}
+
+	if srcs[1] == toCompare && (op == "<=" || op == ">=") {
+		return true
+	}
+
+	toCompareArr := strings.Split(strings.ReplaceAll(toCompare, "v", ""), ".")
+	for i := 0; i < len(srcArr); i++ {
+		v, err := strconv.Atoi(srcArr[i])
+		if err != nil {
+			return false
+		}
+		vv, err := strconv.Atoi(toCompareArr[i])
+		if err != nil {
+			return false
+		}
+		switch op {
+		case ">", ">=":
+			if v < vv {
+				return true
+			} else if v > vv {
+				return false
+			} else {
+				continue
+			}
+		case "<", "<=":
+			if v > vv {
+				return true
+			} else if v < vv {
+				return false
+			} else {
+				continue
+			}
+		}
+	}
+
+	return false
 }
