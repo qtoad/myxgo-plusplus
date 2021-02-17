@@ -14,7 +14,7 @@ func JsonToStruct(data string, value interface{}) error {
 	return json.Unmarshal([]byte(data), value)
 }
 
-func ToJSON(a interface{}) string {
+func JSON(a interface{}) string {
 	if a == nil {
 		return ""
 	}
