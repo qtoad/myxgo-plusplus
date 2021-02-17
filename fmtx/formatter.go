@@ -2,7 +2,7 @@ package fmtx
 
 import (
 	"fmt"
-	"github.com/qtoad/mygo-plusplus/typx"
+	"github.com/qtoad/mygo-plusplus/typex"
 	"io"
 	"reflect"
 	"strconv"
@@ -117,7 +117,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 			io.WriteString(p, t.String())
 		}
 		writeByte(p, '{')
-		if typx.Nonzero(v) {
+		if typex.Nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
@@ -162,7 +162,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 			io.WriteString(p, t.String())
 		}
 		writeByte(p, '{')
-		if typx.Nonzero(v) {
+		if typex.Nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
@@ -179,7 +179,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 					}
 					showTypeInStruct = labelType(f.Type)
 				}
-				pp.printValue(typx.GetField(v, i), showTypeInStruct, true)
+				pp.printValue(typex.GetField(v, i), showTypeInStruct, true)
 				if expand {
 					io.WriteString(pp, ",\n")
 				} else if i < v.NumField()-1 {

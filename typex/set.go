@@ -1,4 +1,4 @@
-package typx
+package typex
 
 import (
 	"sort"

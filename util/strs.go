@@ -2,10 +2,33 @@ package util
 
 import (
 	"bytes"
+	"regexp"
 	"strconv"
 	"strings"
 	"time"
 )
+
+// golang 切割空字符串依然会得到包含一个空元素的数组 => [""]
+func Split(str, sep string) []string {
+	if str != "" {
+		return strings.Split(str, sep)
+	} else {
+		return make([]string, 0)
+	}
+}
+
+func HtmlToPureText(html string) string {
+	reHTML, _ := regexp.Compile("<[^>]*>")
+	return reHTML.ReplaceAllString(html, "")
+}
+
+// 截取文本 支持中文
+func SubString(src string, start, end int) string {
+	runSrc := []rune(src)
+	maxLen := len(runSrc)
+	validEnd := Min(maxLen, end)
+	return string(runSrc[start:validEnd])
+}
 
 func StringToInt(e string) (int, error) {
 	return strconv.Atoi(e)
