@@ -1,4 +1,4 @@
-package lolgo
+package http
 
 import (
 	"io/ioutil"
