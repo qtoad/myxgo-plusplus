@@ -1,8 +1,8 @@
-package util_test
+package fmtx_test
 
 import (
 	"fmt"
-	"github.com/qtoad/xgo-plusplus/util"
+	"github.com/qtoad/xgo-plusplus/fmtx"
 )
 
 func Example() {
@@ -10,7 +10,7 @@ func Example() {
 		a, b int
 	}
 	var x = []myType{{1, 2}, {3, 4}, {5, 6}}
-	fmt.Printf("%# v", util.Formatter(x))
+	fmt.Printf("%# v", fmtx.Formatter(x))
 	// output:
 	// []pretty_test.myType{
 	//     {a:1, b:2},

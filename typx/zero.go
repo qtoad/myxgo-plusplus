@@ -1,10 +1,10 @@
-package util
+package typx
 
 import (
 	"reflect"
 )
 
-func nonzero(v reflect.Value) bool {
+func Nonzero(v reflect.Value) bool {
 	switch v.Kind() {
 	case reflect.Bool:
 		return v.Bool()
@@ -20,14 +20,14 @@ func nonzero(v reflect.Value) bool {
 		return v.String() != ""
 	case reflect.Struct:
 		for i := 0; i < v.NumField(); i++ {
-			if nonzero(getField(v, i)) {
+			if Nonzero(GetField(v, i)) {
 				return true
 			}
 		}
 		return false
 	case reflect.Array:
 		for i := 0; i < v.Len(); i++ {
-			if nonzero(v.Index(i)) {
+			if Nonzero(v.Index(i)) {
 				return true
 			}
 		}
@@ -38,4 +38,12 @@ func nonzero(v reflect.Value) bool {
 		return v.Pointer() != 0
 	}
 	return true
+}
+
+func GetField(v reflect.Value, i int) reflect.Value {
+	val := v.Field(i)
+	if val.Kind() == reflect.Interface && !val.IsNil() {
+		val = val.Elem()
+	}
+	return val
 }

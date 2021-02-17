@@ -1,7 +1,8 @@
-package util
+package fmtx
 
 import (
 	"fmt"
+	"github.com/qtoad/xgo-plusplus/typx"
 	"io"
 	"reflect"
 	"strconv"
@@ -116,7 +117,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 			io.WriteString(p, t.String())
 		}
 		writeByte(p, '{')
-		if nonzero(v) {
+		if typx.Nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
@@ -161,7 +162,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 			io.WriteString(p, t.String())
 		}
 		writeByte(p, '{')
-		if nonzero(v) {
+		if typx.Nonzero(v) {
 			expand := !canInline(v.Type())
 			pp := p
 			if expand {
@@ -178,7 +179,7 @@ func (p *printer) printValue(v reflect.Value, showType, quote bool) {
 					}
 					showTypeInStruct = labelType(f.Type)
 				}
-				pp.printValue(getField(v, i), showTypeInStruct, true)
+				pp.printValue(typx.GetField(v, i), showTypeInStruct, true)
 				if expand {
 					io.WriteString(pp, ",\n")
 				} else if i < v.NumField()-1 {
@@ -316,12 +317,4 @@ func (p *printer) fmtString(s string, quote bool) {
 
 func writeByte(w io.Writer, b byte) {
 	w.Write([]byte{b})
-}
-
-func getField(v reflect.Value, i int) reflect.Value {
-	val := v.Field(i)
-	if val.Kind() == reflect.Interface && !val.IsNil() {
-		val = val.Elem()
-	}
-	return val
 }
