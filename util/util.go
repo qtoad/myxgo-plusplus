@@ -40,31 +40,6 @@ func Random(strings []string) ([]string, error) {
 	return str, nil
 }
 
-func ReplaceNth(s, old, new string, n int) string {
-	i := 0
-	for m := 1; m <= n; m++ {
-		x := strings.Index(s[i:], old)
-		if x < 0 {
-			break
-		}
-		i += x
-		if m == n {
-			return s[:i] + new + s[i+len(old):]
-		}
-		i += len(old)
-	}
-	return s
-}
-
-func InArray(arr []string, str string) bool {
-	for _, v := range arr {
-		if v == str {
-			return true
-		}
-	}
-	return false
-}
-
 func WrapURL(u string) string {
 	uarr := strings.Split(u, "?")
 	if len(uarr) < 2 {
@@ -76,11 +51,6 @@ func WrapURL(u string) string {
 	}
 	return url.QueryEscape(strings.ReplaceAll(uarr[0], "/", "_")) + "?" +
 		strings.ReplaceAll(v.Encode(), "%7B%7B.Id%7D%7D", "{{.Id}}")
-}
-
-func ReplaceAll(s string, oldnew ...string) string {
-	repl := strings.NewReplacer(oldnew...)
-	return repl.Replace(s)
 }
 
 func PackageName(v interface{}) string {
