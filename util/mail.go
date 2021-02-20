@@ -1,4 +1,4 @@
-package netx
+package util
 
 import (
 	"fmt"
@@ -7,11 +7,11 @@ import (
 )
 
 type Mailer struct {
-  username string
-  password string
-  host 	   string
-  port     string
-  nickname string
+	username string
+	password string
+	host     string
+	port     string
+	nickname string
 }
 
 func (m *Mailer) SendMail(to []string, subject, body string) bool {

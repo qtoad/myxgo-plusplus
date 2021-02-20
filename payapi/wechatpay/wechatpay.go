@@ -3,9 +3,9 @@ package wechatpay
 import (
 	"errors"
 	"fmt"
-	"github.com/qtoad/mygo-plusplus/httpx"
 	"github.com/qtoad/mygo-plusplus/util"
 	"github.com/qtoad/mygo-plusplus/uuid"
+	"github.com/qtoad/mygo-plusplus/xhttp"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -89,7 +89,7 @@ func (s *WechatpayClient) UnifiedOrder(
 		unifiedOrderUrl = s.unifiedOrderUrl
 	}
 
-	respData, err := httpx.POST(unifiedOrderUrl, xmlString)
+	respData, err := xhttp.POST(unifiedOrderUrl, xmlString)
 	log.Printf("UnifiedOrder raw resp: %s", respData)
 	if err != nil {
 		return nil, err

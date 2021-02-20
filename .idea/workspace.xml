@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb2b93e5-f97b-4612-876b-94d4643de4ba" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/subdomains/subdomains.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/subdomains/subdomains_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wildmatch/wildmatch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wildmatch/wildmatch_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mygo-plusplus.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_2_20,_10_01_下午_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_2_20__10_01___Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster/mp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster/poster.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poster/resources/font.ttc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/cookie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/session.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/session_local.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xtype/set_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpx/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/httpx/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/html/htmlutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpx/cookie.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpx/httpx.go" beforeDir="false" afterPath="$PROJECT_DIR$/xhttp/xhttp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpx/openuri.go" beforeDir="false" afterPath="$PROJECT_DIR$/xhttp/openuri.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpx/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/xhttp/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httpx/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/xhttp/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netx/mail.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/mail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payapi/wechatpay/wechatpay.go" beforeDir="false" afterPath="$PROJECT_DIR$/payapi/wechatpay/wechatpay.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typx/set.go" beforeDir="false" afterPath="$PROJECT_DIR$/xtype/set.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typx/set_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typx/zero.go" beforeDir="false" afterPath="$PROJECT_DIR$/xtype/zero.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="C:\Go" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -58,10 +67,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613618577323" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/httpx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,24 +82,24 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\go\jto\mygo-plusplus\wildmatch" />
-      <recent name="D:\go\jto\mygo-plusplus\html" />
-      <recent name="D:\go\jto\mygo-plusplus\util" />
-      <recent name="D:\go\jto\mygo-plusplus\xtype" />
-      <recent name="D:\go\jto\mygo-plusplus\openapi" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\go\jto\mygo-plusplus\httpx" />
       <recent name="D:\go\jto\mygo-plusplus\openapi" />
       <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/util" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/util" />
+      <recent name="D:\go\jto\mygo-plusplus\wildmatch" />
+      <recent name="D:\go\jto\mygo-plusplus\html" />
+      <recent name="D:\go\jto\mygo-plusplus\util" />
+      <recent name="D:\go\jto\mygo-plusplus\xtype" />
+    </key>
   </component>
-  <component name="RunManager" selected="Go Test.go test mygo-plusplus (2)">
+  <component name="RunManager" selected="Go Test.go test mygo-plusplus">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="mygo-plusplus" />
       <working_directory value="$PROJECT_DIR$" />
@@ -151,7 +163,7 @@
       <module name="mygo-plusplus" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <kind value="PACKAGE" />
+      <kind value="DIRECTORY" />
       <package value="github.com/qtoad/xgo-plusplus" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
@@ -166,15 +178,15 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test mygo-plusplus" />
         <item itemvalue="Go Test.go test mygo-plusplus (2)" />
         <item itemvalue="Go Test.go test mygo-plusplus (1)" />
-        <item itemvalue="Go Test.go test mygo-plusplus" />
         <item itemvalue="Go Build.go build mygo-plusplus/" />
         <item itemvalue="Go Test.formatter_test.go" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -193,7 +205,7 @@
     <option name="totallyTimeSpent" value="1670000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -235,6 +247,7 @@
         <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add by wang 2021-02-15" />
@@ -254,66 +267,66 @@
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state x="492" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613628321371">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="369" y="23" width="1071" height="828" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613829748446">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="492" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613628321371" />
-    <state x="369" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1613552813455" />
+    <state x="369" y="23" width="1071" height="828" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1613829748446" />
     <state x="662" y="130" key="#go_test_mygo-plusplus_(1)" timestamp="1613628280003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="130" key="#go_test_mygo-plusplus_(1)/0.0.1920.1040@0.0.1920.1040" timestamp="1613628280003" />
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613567131692">
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2" timestamp="1613654990046">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613567131692" />
+    <state x="251" y="109" width="1002" height="592" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1613654990046" />
     <state x="863" y="350" width="509" height="280" key="EnvironmentVariablesDialog" timestamp="1613628215570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="863" y="350" width="509" height="280" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613628215570" />
     <state x="647" y="302" key="EnvironmentVariablesDialog/0.23.1440.828@0.23.1440.828" timestamp="1613441341376" />
-    <state width="670" height="162" key="GridCell.Tab.0.bottom" timestamp="1613633215609">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1006" height="89" key="GridCell.Tab.0.bottom" timestamp="1613656929022">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="670" height="162" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613633215609" />
-    <state width="850" height="17" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613540793934" />
-    <state width="670" height="162" key="GridCell.Tab.0.center" timestamp="1613633215608">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1006" height="89" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1613656929022" />
+    <state width="1006" height="89" key="GridCell.Tab.0.center" timestamp="1613656929021">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="670" height="162" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613633215608" />
-    <state width="850" height="17" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613540793933" />
-    <state width="670" height="162" key="GridCell.Tab.0.left" timestamp="1613633215608">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1006" height="89" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1613656929021" />
+    <state width="1006" height="89" key="GridCell.Tab.0.left" timestamp="1613656929021">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="670" height="162" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613633215608" />
-    <state width="850" height="17" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613540793933" />
-    <state width="670" height="162" key="GridCell.Tab.0.right" timestamp="1613633215609">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1006" height="89" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1613656929021" />
+    <state width="1006" height="89" key="GridCell.Tab.0.right" timestamp="1613656929022">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="670" height="162" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613633215609" />
-    <state width="850" height="17" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613540793934" />
+    <state width="1006" height="89" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1613656929022" />
     <state x="523" y="114" key="RollbackChangesDialog" timestamp="1613522681205">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="523" y="114" key="RollbackChangesDialog/0.23.1440.828@0.23.1440.828" timestamp="1613522681205" />
-    <state x="344" y="62" key="SettingsEditor" timestamp="1613631089603">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="258" y="72" key="SettingsEditor" timestamp="1613829734784">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="344" y="62" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613631089603" />
-    <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613441342810" />
+    <state x="258" y="72" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1613829734784" />
     <state x="814" y="435" key="VCS.ChangelistChooser" timestamp="1613625667332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="814" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1613625667332" />
-    <state x="453" y="168" key="Vcs.Push.Dialog.v2" timestamp="1613633490602">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="453" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613633490602" />
-    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613567135332" />
-    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613546200638">
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2" timestamp="1613654995633">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1613546200638" />
+    <state x="453" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613633490602" />
+    <state x="340" y="157" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1613654995633" />
+    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613829823953">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="562" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1613829823953" />
     <state x="635" y="23" width="604" height="548" key="find.popup" timestamp="1613552769182">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

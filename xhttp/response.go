@@ -1,10 +1,9 @@
-package httpx
+package xhttp
 
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	_ "net/http"
 )
 
 func Response(c *gin.Context, httpCode int, code, msg string, data interface{}) {

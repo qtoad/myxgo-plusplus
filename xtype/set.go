@@ -1,4 +1,4 @@
-package typx
+package xtype
 
 import (
 	"sort"
