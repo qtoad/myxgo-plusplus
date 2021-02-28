@@ -2,7 +2,7 @@ package fmtx_test
 
 import (
 	"fmt"
-	"github.com/qtoad/mygo-plusplus/fmtx"
+	"github.com/qtoad/myxgo-plusplus/fmtx"
 )
 
 func Example() {

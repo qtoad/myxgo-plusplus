@@ -2,7 +2,7 @@ package check
 
 import (
 	"fmt"
-	"github.com/qtoad/mygo-plusplus/diff"
+	"github.com/qtoad/myxgo-plusplus/diff"
 	"reflect"
 	"regexp"
 	"strings"

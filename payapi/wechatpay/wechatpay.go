@@ -3,9 +3,9 @@ package wechatpay
 import (
 	"errors"
 	"fmt"
-	"github.com/qtoad/mygo-plusplus/util"
-	"github.com/qtoad/mygo-plusplus/uuid"
-	"github.com/qtoad/mygo-plusplus/xhttp"
+	"github.com/qtoad/myxgo-plusplus/util"
+	"github.com/qtoad/myxgo-plusplus/uuid"
+	"github.com/qtoad/myxgo-plusplus/xhttp"
 	"io/ioutil"
 	"log"
 	"net/http"

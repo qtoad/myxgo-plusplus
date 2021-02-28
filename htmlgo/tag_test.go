@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	. "github.com/qtoad/mygo-plusplus/htmlgo"
+	. "github.com/qtoad/myxgo-plusplus/htmlgo"
 )
 
 var htmltagCases = []struct {

@@ -1,7 +1,7 @@
 package wildmatch_test
 
 import (
-	"github.com/qtoad/mygo-plusplus/wildmatch"
+	"github.com/qtoad/myxgo-plusplus/wildmatch"
 	"testing"
 )
 

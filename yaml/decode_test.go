@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/qtoad/mygo-plusplus/check"
-	"github.com/qtoad/mygo-plusplus/yaml"
+	. "github.com/qtoad/myxgo-plusplus/check"
+	"github.com/qtoad/myxgo-plusplus/yaml"
 )
 
 var unmarshalIntTest = 123

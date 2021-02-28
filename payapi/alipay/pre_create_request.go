@@ -1,7 +1,7 @@
 package alipay
 
 import (
-	"github.com/qtoad/mygo-plusplus/util"
+	"github.com/qtoad/myxgo-plusplus/util"
 )
 
 /* ================================================================================

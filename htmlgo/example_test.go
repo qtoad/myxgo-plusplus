@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"os"
 
-	. "github.com/qtoad/mygo-plusplus/htmlgo"
+	. "github.com/qtoad/myxgo-plusplus/htmlgo"
 )
 
 /*

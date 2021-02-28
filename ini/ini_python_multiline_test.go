@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/qtoad/mygo-plusplus/ini"
+	"github.com/qtoad/myxgo-plusplus/ini"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

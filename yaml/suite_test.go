@@ -1,7 +1,7 @@
 package yaml_test
 
 import (
-	. "github.com/qtoad/mygo-plusplus/check"
+	. "github.com/qtoad/myxgo-plusplus/check"
 	"testing"
 )
 

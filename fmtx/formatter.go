@@ -2,13 +2,13 @@ package fmtx
 
 import (
 	"fmt"
-	"github.com/qtoad/mygo-plusplus/typex"
+	"github.com/qtoad/myxgo-plusplus/typex"
 	"io"
 	"reflect"
 	"strconv"
 	"text/tabwriter"
 
-	"github.com/qtoad/mygo-plusplus/text"
+	"github.com/qtoad/myxgo-plusplus/text"
 )
 
 type formatter struct {

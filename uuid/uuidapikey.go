@@ -18,7 +18,7 @@ package uuid
 // Dependencies
 import (
 	"encoding/json"
-	"github.com/qtoad/mygo-plusplus/crock32"
+	"github.com/qtoad/myxgo-plusplus/crock32"
 	"regexp"
 	"strconv"
 	"strings"

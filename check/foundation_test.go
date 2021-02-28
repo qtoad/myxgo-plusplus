@@ -8,7 +8,7 @@ package check_test
 
 import (
 	"fmt"
-	"github.com/qtoad/mygo-plusplus/check"
+	"github.com/qtoad/myxgo-plusplus/check"
 	"log"
 	"os"
 	"regexp"
