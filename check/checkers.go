@@ -429,7 +429,7 @@ type panicMatchesChecker struct {
 //
 // For example:
 //
-//     c.Assert(func() { f(1, 2) }, PanicMatches, `open.*: no such file or directory`).
+//     c.Assert(func() { f(1, 2) }, PanicMatches, `open.*: no such img or directory`).
 //
 //
 var PanicMatches Checker = &panicMatchesChecker{

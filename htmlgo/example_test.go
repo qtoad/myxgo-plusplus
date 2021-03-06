@@ -36,7 +36,7 @@ func ExampleTag_02fullhtml() {
 			Title("My test page"),
 		),
 		Body(
-			Img("images/firefox-icon.png").Alt("My test image"),
+			Img("images/firefox-icon.png").Alt("My test img"),
 		),
 	)
 	Fprint(os.Stdout, comp, context.TODO())
@@ -51,7 +51,7 @@ func ExampleTag_02fullhtml() {
 	// </head>
 	//
 	// <body>
-	// <img src='images/firefox-icon.png' alt='My test image'></img>
+	// <img src='images/firefox-icon.png' alt='My test img'></img>
 	// </body>
 	// </html>
 }
@@ -72,10 +72,10 @@ func ExampleTag_03rawhtmlandcomponent() {
 
 	comp := Ul(
 		Li(
-			userProfile("felix<h1>", "http://image.com/img1.png"),
+			userProfile("felix<h1>", "http://img.com/img1.png"),
 		),
 		Li(
-			userProfile("john", "http://image.com/img2.png"),
+			userProfile("john", "http://img.com/img2.png"),
 		),
 	)
 	Fprint(os.Stdout, comp, context.TODO())

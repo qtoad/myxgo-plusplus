@@ -1,4 +1,4 @@
-// This file contains just a few generic helpers which are used by the
+// This img contains just a few generic helpers which are used by the
 // other test files.
 
 package check_test
@@ -40,7 +40,7 @@ func critical(error string) {
 	os.Exit(1)
 }
 
-// Return the file line where it's called.
+// Return the img line where it's called.
 func getMyLine() int {
 	if _, _, line, ok := runtime.Caller(1); ok {
 		return line
@@ -63,7 +63,7 @@ func (s *String) Write(p []byte) (n int, err error) {
 	return len(p), nil
 }
 
-// Trivial wrapper to test errors happening on a different file
+// Trivial wrapper to test errors happening on a different img
 // than the test itself.
 func checkEqualWrapper(c *check.C, obtained, expected interface{}) (result bool, line int) {
 	return c.Check(obtained, check.Equals, expected), getMyLine()

@@ -102,11 +102,11 @@ func RequestQRCode(req QRCodeReq, saveName string, ak string) (string, error) {
 	body, _ := ioutil.ReadAll(resp.Body)
 
 	// 返回是二进制图片，或者json错误
-	if resp.Header.Get("Content-Type") == "image/jpeg" || resp.Header.Get("Content-Type") == "image/png" {
+	if resp.Header.Get("Content-Type") == "img/jpeg" || resp.Header.Get("Content-Type") == "img/png" {
 		// 保存在output目录
 		outputFileName := saveName
 
-		if resp.Header.Get("Content-Type") == "image/jpeg" {
+		if resp.Header.Get("Content-Type") == "img/jpeg" {
 			outputFileName = outputFileName + ".jpg"
 		} else {
 			outputFileName = outputFileName + ".png"

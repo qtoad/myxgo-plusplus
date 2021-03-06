@@ -59,30 +59,6 @@ func IsDecimals(str ...string) bool {
 	return b
 }
 
-//手提电话（不带前缀）最高11位
-func IsMobile(str ...string) bool {
-	var b bool
-	for _, s := range str {
-		b, _ = regexp.MatchString("^1[0-9]{10}$", s)
-		if false == b {
-			return b
-		}
-	}
-	return b
-}
-
-//家用电话（不带前缀） 最高8位
-func IsTelephone(str ...string) bool {
-	var b bool
-	for _, s := range str {
-		b, _ = regexp.MatchString("^[0-9]{8}$", s)
-		if false == b {
-			return b
-		}
-	}
-	return b
-}
-
 /************************* 英文类型 *************************/
 //仅小写
 func IsEngishLowCase(str ...string) bool {
@@ -122,18 +98,6 @@ func IsEnglish(str ...string) bool {
 
 func Match(p string, s string) bool {
 	b, _ := regexp.MatchString(p, s)
-	return b
-}
-
-//邮箱 最高30位
-func IsEmail(str ...string) bool {
-	var b bool
-	for _, s := range str {
-		b, _ = regexp.MatchString("^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$", s)
-		if false == b {
-			return b
-		}
-	}
 	return b
 }
 

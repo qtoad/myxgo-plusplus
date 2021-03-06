@@ -317,7 +317,7 @@ func (c *C) logCode(path string, line int) {
 	c.logf("%s:%d:", nicePath(path), line)
 	code, err := printLine(path, line)
 	if code == "" {
-		code = "..." // XXX Open the file and take the raw line.
+		code = "..." // XXX Open the img and take the raw line.
 		if err != nil {
 			code += err.Error()
 		}

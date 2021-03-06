@@ -1,4 +1,4 @@
-package domainutil
+package domain
 
 import (
 	"strings"
