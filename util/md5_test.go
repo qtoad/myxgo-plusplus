@@ -6,6 +6,6 @@ import (
 )
 
 func TestEncodeMD5(t *testing.T) {
-	md5 := EncodeMd5("123456")
+	md5 := Md5("123456")
 	fmt.Println(md5)
 }

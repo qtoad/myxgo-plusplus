@@ -1,81 +1,46 @@
 package xhttp
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
-func Response(c *gin.Context, httpCode int, code, msg string, data interface{}) {
-	c.JSON(httpCode, gin.H{
-		"code": code,
-		"msg":  msg,
-		"data": data,
+type Resp struct {
+	Code int         `json:"code"`
+	Msg  string      `json:"msg"`
+	Data interface{} `json:"data"`
+}
+
+// 公共结构体返回
+func Response(c *gin.Context, httpCode int, code int, msg string, data interface{}) {
+	c.JSON(httpCode, Resp{
+		Code: code,
+		Msg:  msg,
+		Data: data,
 	})
 
 	return
 }
 
-type Resp struct {
-	Success bool        `json:"success"`
-	Code    int         `json:"code"`
-	Msg     string      `json:"msg"`
-	Data    interface{} `json:"data"`
-}
-
-func JSONSucc(c *gin.Context, data interface{}) {
-	JSONSuccess(c, 0, "", data)
-}
-
-// 公共结构体返回
-func JSONSuccess(c *gin.Context, code int, msg string, data interface{}) {
-	if code == 0 {
-		code = 200
-	}
-	if msg == "" {
-		msg = "success"
-	}
+//成功
+func RespOK(c *gin.Context, data interface{}) {
 	c.JSON(http.StatusOK, Resp{
-		Success: true,
-		Code:    code,
-		Msg:     msg,
-		Data:    data,
+		Code: 200,
+		Msg:  "OK",
+		Data: data,
 	})
 }
 
-func JSONFail(c *gin.Context, code int, msg string) {
+//失败
+func RespFAIL(c *gin.Context, code int, msg string) {
 	if code == 0 {
 		code = 400
 	}
 	if msg == "" {
 		msg = "unknown"
 	}
-
-	c.JSON(http.StatusOK, Resp{
-		Success: false,
-		Code:    code,
-		Msg:     msg,
+	c.JSON(http.StatusBadRequest, Resp{
+		Code: code,
+		Msg:  msg,
 	})
-}
-
-func JSONErr(c *gin.Context, code int, biz string, err error) {
-	if code == 0 {
-		code = 400
-	}
-	if biz == "" {
-		biz = "unknown"
-	}
-	if err != nil {
-		c.JSON(http.StatusOK, Resp{
-			Success: false,
-			Code:    code,
-			Msg:     fmt.Sprintf(`biz: %v error: %v`, biz, err.Error()),
-		})
-	} else {
-		c.JSON(http.StatusOK, Resp{
-			Success: false,
-			Code:    code,
-			Msg:     fmt.Sprintf(`biz: %v error: unknown must fix`, biz),
-		})
-	}
 }

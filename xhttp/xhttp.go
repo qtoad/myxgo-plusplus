@@ -48,7 +48,7 @@ func GET(url string) (body string, err error) {
 /*
  * 上传文件
  *  */
-func HttpPostFile(url, filename, fileTag string, params map[string]string) (int, map[string][]string, string, error) {
+func PostFile(url, filename, fileTag string, params map[string]string) (int, map[string][]string, string, error) {
 	if !filepath.IsAbs(filename) {
 		filename, _ = filepath.Abs(filename)
 	}

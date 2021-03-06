@@ -1,4 +1,4 @@
-package util
+package file
 
 import (
 	"bufio"
@@ -6,7 +6,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	file2 "github.com/qtoad/myxgo-plusplus/img"
 	"io"
 	"io/ioutil"
 	"log"
@@ -150,21 +149,6 @@ const (
 	image     = "bmp dib pcp dif wmf gif jpg tif eps psd cdr iff tga pcd mpt png jpeg"
 )
 
-// 文件类型选择
-func GetFileType(ft string) string {
-	if strings.Contains(image, ft) {
-		return "img"
-	} else if strings.Contains(documents, ft) {
-		return "doc"
-	} else if strings.Contains(music, ft) {
-		return "music"
-	} else if strings.Contains(video, ft) {
-		return "video"
-	} else {
-		return "other"
-	}
-}
-
 // 字节的单位转换 保留两位小数
 func FormatFileSize(fileSize int64) (size string) {
 	if fileSize < 1024 {
@@ -232,7 +216,7 @@ func MkDir(src string) error {
 }
 
 // Open a img according to a specific mode
-func Open(name string, flag int, perm os.FileMode) (*os.File, error) {
+func OpenFile(name string, flag int, perm os.FileMode) (*os.File, error) {
 	f, err := os.OpenFile(name, flag, perm)
 	if err != nil {
 		return nil, err
@@ -242,7 +226,7 @@ func Open(name string, flag int, perm os.FileMode) (*os.File, error) {
 }
 
 // MustOpen maximize trying to open the img
-func MustOpen(fileName, filePath string) (*os.File, error) {
+func MustOpenFile(fileName, filePath string) (*os.File, error) {
 	dir, err := os.Getwd()
 	if err != nil {
 		return nil, fmt.Errorf("os.Getwd err: %v", err)
@@ -259,7 +243,7 @@ func MustOpen(fileName, filePath string) (*os.File, error) {
 		return nil, fmt.Errorf("img.IsNotExistMkDir src: %s, err: %v", src, err)
 	}
 
-	f, err := Open(src+fileName, os.O_APPEND|os.O_CREATE|os.O_RDWR, 0644)
+	f, err := OpenFile(src+fileName, os.O_APPEND|os.O_CREATE|os.O_RDWR, 0644)
 	if err != nil {
 		return nil, fmt.Errorf("Fail to OpenFile :%v", err)
 	}
@@ -267,39 +251,8 @@ func MustOpen(fileName, filePath string) (*os.File, error) {
 	return f, nil
 }
 
-// GetImageType 获取Image文件类型
-func GetImageType(p string) (string, error) {
-	file, err := os.Open(p)
-
-	if err != nil {
-		log.Println(err)
-		os.Exit(1)
-	}
-
-	buff := make([]byte, 512)
-
-	_, err = file.Read(buff)
-
-	if err != nil {
-		log.Println(err)
-		os.Exit(1)
-	}
-
-	filetype := http.DetectContentType(buff)
-
-	ext := file2.GetImgExt()
-
-	for i := 0; i < len(ext); i++ {
-		if strings.Contains(ext[i], filetype[6:len(filetype)]) {
-			return filetype, nil
-		}
-	}
-
-	return "", errors.New("Invalid img type")
-}
-
-// GetType 获取文件类型
-func GetType(p string) (string, error) {
+// GetFileType 获取文件类型
+func GetFileType(p string) (string, error) {
 	file, err := os.Open(p)
 
 	if err != nil {
