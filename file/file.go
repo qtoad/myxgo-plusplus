@@ -215,6 +215,15 @@ func MkDir(src string) error {
 	return nil
 }
 
+func Open(name string, flag int, perm os.FileMode) (*os.File, error) {
+	f, err := os.OpenFile(name, flag, perm)
+	if err != nil {
+		return nil, err
+	}
+
+	return f, nil
+}
+
 // Open a img according to a specific mode
 func OpenFile(name string, flag int, perm os.FileMode) (*os.File, error) {
 	f, err := os.OpenFile(name, flag, perm)

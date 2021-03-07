@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
+	"github.com/qtoad/myxgo-plusplus/crypto"
 	"net/url"
 	"regexp"
 	"sort"
@@ -173,7 +174,7 @@ func ToLowerUnderlinedNamer(name string) string {
  *  */
 func GetTokenString() string {
 	timestamp := UnixNanoTimestamp()
-	return Md5(strconv.FormatInt(timestamp, 10))
+	return crypto.Md5(strconv.FormatInt(timestamp, 10))
 }
 
 /*
@@ -1279,7 +1280,7 @@ func MapDataSign(params map[string]string, secret string) (string, bool) {
 
 	//Md5签名（在拼接的字符串头尾附加上api密匙，然后md5，md5串是大写）
 	paramString = fmt.Sprintf("%s%s%s", secret, paramString, secret)
-	sign := Md5(paramString)
+	sign := crypto.Md5(paramString)
 
 	return strings.ToUpper(sign), isExpired
 }

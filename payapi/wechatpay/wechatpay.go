@@ -3,6 +3,7 @@ package wechatpay
 import (
 	"errors"
 	"fmt"
+	"github.com/qtoad/myxgo-plusplus/crypto"
 	"github.com/qtoad/myxgo-plusplus/util"
 	"github.com/qtoad/myxgo-plusplus/uuid"
 	"github.com/qtoad/myxgo-plusplus/xhttp"
@@ -12,8 +13,6 @@ import (
 	"strings"
 	"time"
 )
-
-import ()
 
 /* ================================================================================
  * 微信支付签名工具模块
@@ -184,7 +183,7 @@ func (s *WechatpayClient) UnifiedOrderRequestSign(
 	waitingSignString = fmt.Sprintf("%s&key=%s", waitingSignString, s.apiSecret)
 	log.Printf("UnifiedOrderRequestSign waitingSignString append secret: %s", waitingSignString)
 
-	sign := strings.ToUpper(util.Md5(waitingSignString))
+	sign := strings.ToUpper(crypto.Md5(waitingSignString))
 	log.Printf("UnifiedOrderRequestSign sign: %s", sign)
 
 	return sign
@@ -200,7 +199,7 @@ func (s *WechatpayClient) UnifiedOrderResultSign(
 	//待签名字符串
 	waitingSignString := util.JoinMapToString(params, []string{"sign"}, false)
 	waitingSignString = fmt.Sprintf("%s&key=%s", waitingSignString, s.apiSecret)
-	sign := strings.ToUpper(util.Md5(waitingSignString))
+	sign := strings.ToUpper(crypto.Md5(waitingSignString))
 	return sign
 }
 

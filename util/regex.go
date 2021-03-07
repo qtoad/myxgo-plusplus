@@ -9,6 +9,45 @@ import (
 
 //正则匹配的方法
 
+const (
+	regex_email_pattern        = `(?i)[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,6}`
+	regex_strict_email_pattern = `(?i)[A-Z0-9!#$%&'*+/=?^_{|}~-]+` +
+		`(?:\.[A-Z0-9!#$%&'*+/=?^_{|}~-]+)*` +
+		`@(?:[A-Z0-9](?:[A-Z0-9-]*[A-Z0-9])?\.)+` +
+		`[A-Z0-9](?:[A-Z0-9-]*[A-Z0-9])?`
+	regex_url_pattern = `(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?`
+)
+
+var (
+	regex_email        *regexp.Regexp
+	regex_strict_email *regexp.Regexp
+	regex_url          *regexp.Regexp
+)
+
+func init() {
+	regex_email = regexp.MustCompile(regex_email_pattern)
+	regex_strict_email = regexp.MustCompile(regex_strict_email_pattern)
+	regex_url = regexp.MustCompile(regex_url_pattern)
+}
+
+// IsEmail validates string is an email address, if not return false
+// basically validation can match 99% cases
+func IsEmail(email string) bool {
+	return regex_email.MatchString(email)
+}
+
+// IsEmailRFC validates string is an email address, if not return false
+// this validation omits RFC 2822
+func IsEmailRFC(email string) bool {
+	return regex_strict_email.MatchString(email)
+}
+
+// IsUrl validates string is a url link, if not return false
+// simple validation can match 99% cases
+func IsUrl(url string) bool {
+	return regex_url.MatchString(url)
+}
+
 /************************* 自定义类型 ************************/
 //数字+字母  不限制大小写 6~30位
 func IsID(str ...string) bool {
@@ -195,7 +234,7 @@ func IsAlphaOrNumber(sourceString string) bool {
 /*
  * 是否电子邮件
  *  */
-func IsEmail(sourceString string, args ...interface{}) bool {
+func IsEmail2(sourceString string, args ...interface{}) bool {
 	pattern := "^[a-zA-Z0-9]{1}[a-zA-Z0-9_-]*@[a-zA-Z0-9]{1}[a-zA-Z0-9_-]{0,}(\\.[a-zA-Z]+)+$"
 
 	if len(args) == 1 {

@@ -20,7 +20,7 @@ func Command(cmd string, args ...string) (string, error) {
 /*
  * 根据进程名称找到对应的pid
  *  */
-func FindProcessID(processName string) (int, error) {
+func ProcessID(processName string) (int, error) {
 	var pid int
 	args := []string{
 		"-ef",
@@ -43,15 +43,15 @@ func FindProcessID(processName string) (int, error) {
 /*
  * 运行指定的进程
  *  */
-func StartProcess(processName string) (string, error) {
+func ProcessStart(processName string) (string, error) {
 	return Command("nohup", processName, "2>&1", "&")
 }
 
 /*
  * 杀死指定pid进程
  *  */
-func StopProcess(processName string) (string, error) {
-	pid, err := FindProcessID(processName)
+func ProcessStop(processName string) (string, error) {
+	pid, err := ProcessID(processName)
 
 	if err != nil {
 		return "", err
